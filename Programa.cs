@@ -12,7 +12,7 @@ namespace teset
             do
             {
                 Limpar();
-                Escrever("----MENU----- \n 1-Listar ações \n 2- Cadastrar ação \n 3- Exportar informações \n 4- Remover ações \n 5- Sair \nOpção: ");
+                Escrever("----MENU----- \n 1- Listar ações \n 2- Cadastrar ação \n 3- Exportar informações \n 4- Remover ações \n 5- Sair \nOpção: ");
                 opc = int.Parse(Ler());
                 switch (opc)
                 {
@@ -26,7 +26,7 @@ namespace teset
                         break;
                     case 3:
                         Limpar();
-                        string fileName = @"C:\Users\lucas\teset\dados.txt";
+                        string fileName = @"dados.txt";
                         ExportarInformacoes(fileName);
                         break;
                     case 4:
@@ -67,7 +67,7 @@ namespace teset
 
         public void ExportarInformacoes(string retorno)
         {
-            string nmArquivo = retorno; //@"C:\Users\loren\Treinamento2\dados.txt";
+            string nmArquivo = retorno; 
             try
             {
                 using (FileStream fs = File.Create(nmArquivo))

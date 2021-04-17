@@ -13,7 +13,7 @@ namespace teset{
 
         public Acao(){}
         public string GetDescricaoAcao(){
-            return $" Nome: {nome}, Código: {codigo}, Quantidade: {quantidade}";
+            return $" Nome: {nome}, Código: {codigo}, Quantidade: {quantidade}\n";
         }
 
     

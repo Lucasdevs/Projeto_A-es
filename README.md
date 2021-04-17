@@ -1,2 +1,3 @@
 # Projeto_A-es
-Projeto.
+
+O Projeto deve ser rodado através do comando "dotnet run" no terminal.

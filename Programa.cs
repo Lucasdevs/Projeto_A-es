@@ -49,16 +49,33 @@ namespace teset
             Acao acao = new Acao();
             Escrever("Digite o nome da ação: ");
             acao.nome = Ler();
-            Escrever("Digite o código da ação: ");
-            acao.codigo = Ler();
-            Escrever("Digite quantas ações deseja cadastar:");
-            acao.quantidade = int.Parse(Ler());
-            acoes.Add(acao);
-            Limpar();
-            Escrever("Gostaria de Cadastrar outra ação? [s/n]");
-            var cadastrarNovamente = Ler().ToLower();
-            if (cadastrarNovamente == "s")
-                CadastrarAcao();
+            if(PesquisarAcao(acao.nome) != null){
+                acao = PesquisarAcao(acao.nome);
+                acoes.Remove(acao);
+                var x = acao.quantidade;
+                Escrever("Digite quantas ações deseja cadastar:");
+                acao.quantidade = int.Parse(Ler());
+                acao.quantidade = acao.quantidade+x;
+                acoes.Add(acao);
+                Limpar();
+                Escrever("Gostaria de Cadastrar outra ação? [s/n]");
+                var cadastrarNovamentex = Ler().ToLower();
+                if (cadastrarNovamentex == "s")
+                    CadastrarAcao();
+            }
+            else{
+                Escrever("Digite o código da ação: ");
+                acao.codigo = Ler();
+                Escrever("Digite quantas ações deseja cadastar:");
+                acao.quantidade = int.Parse(Ler());
+                acoes.Add(acao);
+                Limpar();
+                Escrever("Gostaria de Cadastrar outra ação? [s/n]");
+                var cadastrarNovamente = Ler().ToLower();
+                if (cadastrarNovamente == "s"){
+                    CadastrarAcao();
+                }
+            }
         }
 
         public void ListarAcoes()

@@ -12,7 +12,7 @@ namespace teset
             do
             {
                 Limpar();
-                Escrever("|----MENU-----| \n\n1- Listar ações \n2- Cadastrar ação \n3- Exportar informações \n4- Remover ações \n5- Sair \n\nOpção: ");
+                Escrever("|----MENU-----| \n\n1- Listar ações \n2- Cadastrar ação \n3- Exportar informações \n4- Remover ações \n5- Pesquisar ação \n6- Sair \n\nOpção: ");
                 opc = int.Parse(Ler());
                 switch (opc)
                 {
@@ -32,10 +32,14 @@ namespace teset
                     case 4:
                         ExcluirAcao();
                         break;
+                    case 5:
+                        Limpar();
+                        SearchAcao();
+                        break;
                     default:
                         break;
                 }
-            } while (opc != 5);
+            } while (opc != 6);
         }
 
 
@@ -82,6 +86,7 @@ namespace teset
             {
                 throw;
             }
+            Escrever("Aperte qualquer tecla para voltar ao menu...\n");
             SeguraTela();
         }
 
@@ -99,6 +104,18 @@ namespace teset
             acao = PesquisarAcao(nome);
             if (PesquisarAcao(nome) != null)
                 acoes.Remove(acao);
+        }
+
+        public void SearchAcao(){
+            Escrever("Digite o nome da ação a ser pesquisada:");
+            var nome = Ler();
+            foreach (Acao acao in acoes)
+                if (nome == acao.nome)
+                    Escrever(acao.GetDescricaoAcao()+"\n");
+                else
+                    Escrever("Nenhuma ação encontrada.\n\n");
+            Escrever("Aperte qualquer tecla para voltar ao menu...\n");
+            SeguraTela();
         }
     }
 }

@@ -12,7 +12,7 @@ namespace teset
             do
             {
                 Limpar();
-                Escrever("----MENU----- \n 1- Listar ações \n 2- Cadastrar ação \n 3- Exportar informações \n 4- Remover ações \n 5- Sair \nOpção: ");
+                Escrever("|----MENU-----| \n\n1- Listar ações \n2- Cadastrar ação \n3- Exportar informações \n4- Remover ações \n5- Sair \n\nOpção: ");
                 opc = int.Parse(Ler());
                 switch (opc)
                 {

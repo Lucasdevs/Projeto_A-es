@@ -1,0 +1,16 @@
+E:\Arquivos\Estudo\Tesi\teset\bin\Debug\net5.0\lucas.exe
+E:\Arquivos\Estudo\Tesi\teset\bin\Debug\net5.0\lucas.deps.json
+E:\Arquivos\Estudo\Tesi\teset\bin\Debug\net5.0\lucas.runtimeconfig.json
+E:\Arquivos\Estudo\Tesi\teset\bin\Debug\net5.0\lucas.runtimeconfig.dev.json
+E:\Arquivos\Estudo\Tesi\teset\bin\Debug\net5.0\lucas.dll
+E:\Arquivos\Estudo\Tesi\teset\bin\Debug\net5.0\ref\lucas.dll
+E:\Arquivos\Estudo\Tesi\teset\bin\Debug\net5.0\lucas.pdb
+E:\Arquivos\Estudo\Tesi\teset\obj\Debug\net5.0\lucas.csprojAssemblyReference.cache
+E:\Arquivos\Estudo\Tesi\teset\obj\Debug\net5.0\lucas.GeneratedMSBuildEditorConfig.editorconfig
+E:\Arquivos\Estudo\Tesi\teset\obj\Debug\net5.0\lucas.AssemblyInfoInputs.cache
+E:\Arquivos\Estudo\Tesi\teset\obj\Debug\net5.0\lucas.AssemblyInfo.cs
+E:\Arquivos\Estudo\Tesi\teset\obj\Debug\net5.0\lucas.csproj.CoreCompileInputs.cache
+E:\Arquivos\Estudo\Tesi\teset\obj\Debug\net5.0\lucas.dll
+E:\Arquivos\Estudo\Tesi\teset\obj\Debug\net5.0\ref\lucas.dll
+E:\Arquivos\Estudo\Tesi\teset\obj\Debug\net5.0\lucas.pdb
+E:\Arquivos\Estudo\Tesi\teset\obj\Debug\net5.0\lucas.genruntimeconfig.cache
